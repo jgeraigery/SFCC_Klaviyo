@@ -20,7 +20,7 @@
   "homepage": "https://github.com/klaviyo/SFCC_Klaviyo#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.2.2",
+    "mocha": "^10.0.0",
     "sgmf-scripts": "^2.4.1"
   },
   "dependencies": {
