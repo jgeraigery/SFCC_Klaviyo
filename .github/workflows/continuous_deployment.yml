@@ -13,7 +13,7 @@ jobs:
       version: ${{ steps.latest_version.outputs.version }}
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/setup-python@v4.4.0
+    - uses: actions/setup-python@v4.8.0
       with:
         python-version: "3.11"
     - name: Install Changelogger
@@ -36,7 +36,7 @@ jobs:
     if: needs.determine-if-deploy.outputs.deploy == 'true'
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4.4.0
+      - uses: actions/setup-python@v4.8.0
         with:
           python-version: "3.11"
       - name: Install Changelogger
