@@ -23,7 +23,7 @@ jobs:
       run: |
         VERSION=$(changelogger versions --latest)
         echo "version=${VERSION}" >> $GITHUB_OUTPUT
-    - uses: mukunku/tag-exists-action@v1.2.0
+    - uses: mukunku/tag-exists-action@v1.6.0
       id: tag_exists
       with:
         tag: ${{ steps.latest_version.outputs.version }}
